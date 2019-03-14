@@ -1,0 +1,46 @@
+{
+  "type": "APL",
+  "version": "1.0",
+  "theme": "dark",
+  "import": [],
+  "resources": [],
+  "styles": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "item": [
+          {
+            "type": "Image",
+            "width": "100vw",
+            "height": "115vh",
+            "source": "http://fkubala.pl/wp-content/gallery/albania-2016/DSC_7456.jpg"
+          },
+          {
+            "when": "${viewport.shape != 'round'}",
+            "type": "Text",
+            "text": "Hello world!",
+            "position": "absolute",
+            "top": "10vh",
+            "left": "10vw",
+            "fontSize": "10vh"
+          },
+          {
+            "when": "${viewport.shape == 'round'}",
+            "type": "Text",
+            "text": "Hello world!",
+            "position": "absolute",
+            "top": "10vh",
+            "textAlign": "center",
+            "width": "100vw",
+            "fontSize": "10vh"
+          }
+        ]
+      }
+    ]
+  }
+}
